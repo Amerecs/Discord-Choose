@@ -1,13 +1,10 @@
-const { Client, Collection, MessageAttachment, MessageActionRow, MessageEmbed, MessageButton } = require('discord.js');
-const { createCanvas, loadImage } = require('canvas');
+const { Client, Collection } = require('discord.js');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const fs = require('fs');
-const channel = "";
 
 const client = new Client({ intents: 3276799 });
 
-const { clientId, guildId, token, number } = require("./config.js");
+const { clientId, guildId, token } = require("./config.js");
 
 
 client.commands = new Collection()
